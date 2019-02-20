@@ -1,0 +1,17 @@
+#!/usr/bin/env bash
+
+set -o errexit
+set -o pipefail
+set -o nounset
+set -o xtrace
+
+OUT_DIR=./_build/dist
+CACHE_DIR="${OUT_DIR}.cache"
+
+rm -rf "${OUT_DIR}"
+mkdir -p "${OUT_DIR}"
+
+./node_modules/.bin/parcel build ./src/index.pug \
+	--out-dir "${OUT_DIR}" \
+	--cache-dir "${CACHE_DIR}" \
+	--log-level 4

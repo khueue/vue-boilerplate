@@ -1,0 +1,19 @@
+{
+  "name": "vue-boilerplate",
+  "version": "0.0.1",
+  "description": "",
+  "keywords": [],
+  "private": true,
+  "license": "",
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "5.7.2",
+    "@vue/component-compiler-utils": "2.5.2",
+    "bulma": "0.7.4",
+    "node-sass": "4.11.0",
+    "parcel-bundler": "1.11.0",
+    "pug": "2.0.3",
+    "vue": "2.6.6",
+    "vue-hot-reload-api": "2.3.2",
+    "vue-template-compiler": "2.6.6"
+  }
+}
