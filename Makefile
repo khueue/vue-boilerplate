@@ -5,7 +5,7 @@ default:
 #
 # make server (npm-install must be done first)
 # make npm-install
-# make build-and-deploy
+# make build
 
 server:
 	make app-cmd-with-ports cmd=./bin/server
@@ -13,10 +13,8 @@ server:
 npm-install:
 	make app-cmd cmd="npm install"
 
-build-and-deploy:
-	limes assume private
+build:
 	make app-cmd cmd=./bin/build
-	make infra-cmd cmd=./bin/deploy-app
 
 # Application tooling.
 #
